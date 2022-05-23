@@ -1,0 +1,163 @@
+body
+{
+    background-color: black;
+    font-family: 'Merriweather', serif;
+
+}
+.container
+{
+    padding-top: 15px;
+    padding-bottom: 40px;
+    contain: content;
+    
+}
+.title{
+    padding-top: 15px;
+    padding-bottom: 0px;
+    background-color:#555C5B;
+    border-style: solid;
+    border-color: #2DA896;
+    border-width: 5px;
+    height:10%;
+    
+    box-sizing: content-box;
+    
+    
+}
+#name1
+{
+    background-color: #2DA896;
+    color:#195C52 ;
+    font-weight: bold;
+    border-style: solid;
+    border-color: black;
+}
+.left1
+{
+    background-color:#2DA896;
+    width: 30rem;
+    height:20rem;
+    margin-top: 1%;
+    margin-right:4%;
+    margin-left:5%;
+    font-weight: bold;
+    /* border-style: solid;
+    border-color:#555C5B;
+    border-radius: 10px;
+    border-width: 5px; */
+}
+    .right1{
+        margin-top: 1%;
+        background-color:#555C5B;
+        margin-right:0;
+    width: 30rem;
+    height:20rem;
+    font-weight: bold;
+    /* border-style: solid;
+    border-color:#2DA896;
+    border-radius: 10px;
+    border-width: 5px; */
+    }
+    .fa-check-circle:hover, .fa-bullseye:hover, .fa-heart:hover
+{
+    color:white;
+}
+#features
+{   
+    padding: 7% 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#2DA896;
+    margin-top: 2%;
+    text-align: center;
+}
+.image
+{
+    width:100%;
+    height: 100%;
+    text-align: center;
+}
+.image1
+{   height:100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        
+
+}
+#testimonials
+{
+    
+    text-align:center;
+    background-color:#195C52;
+    color:#fff;
+    margin-top: 2%;
+    
+}
+.testimonial-image
+{
+    width: 30%;
+    margin: 10px;
+    padding-bottom:0%;
+    
+}
+.carousel-item
+{
+    padding:7% 15%;
+    margin-top: 5%;
+    padding-bottom:0%;
+    padding-top: 0%;
+}
+#footer
+{
+    /* padding: 7% 10%; */
+    padding-bottom: 0%;
+    padding-top:5%;
+    text-align: centre;
+}
+/* SIGN UP PAGE DESIGN */
+h2.h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #195C52 ;
+
+}
+button.signup{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+    background-color:#195C52;
+    color:#80E1D3;
+    border-radius: 10px;
+    text-align:center;
+}
+#signupform
+
+{   
+    font-family:'Pathway Gothic One', sans-serif;
+    margin-top: 5%;
+    /* margin-left: 60%;
+    margin-right:50%;
+    text-align: center; */
+   color:#2DA896;
+    background-color:#80E1D3;
+    font-size: 26px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    width:420px;
+    height: 650px;
+    border: 10px solid;
+    border-radius: 50px;
+    border-color:#2DA896;
+    
+    
+}
+input.signup{
+    color:#195c52; /*2DA896;*/
+    background-color: #BEF1EA;
+    border-radius: 10px;
+    border-color: #BEF1EA;
+    height: 35px;
+    width: 160px;
+
+}
