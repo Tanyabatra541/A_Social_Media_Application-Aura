@@ -1,0 +1,23 @@
+
+<%- include('partials/header2'); -%>  
+          <div class="col-lg-4">
+            <div class="row container"style="background-color:#80E1D3 ;width:600px;height:100%;content:contain;border-radius:40px">   
+            <div class="col" style="color: #195c52;font-family:'Shadows Into Light',sans-serif ;font-size:30px;font-weight: bold; padding-top:5%;"><%=friendname%></div><br><br>
+            <% messagedetails.forEach(function(message) { %>
+            <p class="message2" style="color:white;font-family:'Shadows Into Light',sans-serif ;"><%=message.message%></p><br>
+            <% } ) %> 
+            <% messagefromdetails.forEach(function(message) { %>
+            <p class="message3" style="color:white;font-family:'Shadows Into Light',sans-serif ;"><%=message.message%></p><br>
+            <% } ) %> 
+            <div class="row" style="color: black;font-family:'Shadows Into Light',sans-serif ;font-size:30px;font-weight: bold; padding-left: 8%; padding-top: 1%;"></div><br>
+            <form method="post" action="/storemessage"> 
+                <input type="text" value="<%=friendname%>" name="to" style="display: none;">
+            <input type="text" value="<%=NewUser%>" name="from" style="display: none;">
+            <input type="text" style="height:35px" class="message1" name="message" placeholder="message">
+            <button class="btn btn-dark" type="submit" style="color:#80E1D3 ;height: 35px;">></button>
+            </form>
+        </div><br>
+         </div>
+         </div>
+        </div>
+          <%- include('partials/footer2'); -%>

@@ -1,0 +1,21 @@
+<%- include('partials/header2'); -%>  
+<div class="col-lg-4">
+    <div class="row" style="background-color:#2DA896;width:500px;height:500px;content:contain;">  
+        <form action="/editprofile" method="post">
+            <h2 class="h2" style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;">PERSONAL INFORMATION</h2>
+            <ul style="list-style-type:none;">
+        
+    <table style="text-align:left;"> 
+    <tr> <td style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size: 30px;font-weight: bold;">Username:&nbsp;</td> <td style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size: 30px;font-weight: bold;"> <%=NewUser%></td></tr>
+   <tr><td><br></td></tr>
+   <tr> <td style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size: 30px;font-weight: bold;">Contact:&nbsp;</td><td style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size: 30px;font-weight: bold;"><%=phno%></td></tr>
+<tr><td><br></td></tr>
+<tr> <td style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size: 30px;font-weight: bold;"> Email:&nbsp;</td> <td style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size: 30px;font-weight: bold;"><%=email%></td></tr>
+<tr><td><br></td></tr>
+<tr> <td style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size: 30px;font-weight: bold;"> Date Of Birth:&nbsp;</td> <td style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size: 30px;font-weight: bold;"><%=dob%></td></tr>
+                <tr><td><br></td></tr>
+            </table>
+            </ul>
+        </form> 
+</div></div>
+<%- include('partials/footer2'); -%>

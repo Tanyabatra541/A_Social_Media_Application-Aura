@@ -1,0 +1,16 @@
+<%- include('partials/header2'); -%>
+<div class="col-lg-4">
+    <div id="myfeed" class="row" style="background-color:#2DA896;width:900px;height:100%;content:contain;padding-top:50px;margin-top: 100px;">
+        <div class="col-lg-6"><h2 class="h2" style="font-family:'Shadows Into Light',sans-serif ;">My Feed</h2></div>
+        <div class="col-lg-6"><button class="btn btn-dark" style="color:#2DA896;font-weight: bold;"onclick="photos()" >PHOTOS</button></div><br>   
+   <div class="col" id="photos"style="display:none;margin-top:5px;">
+   <div class="row">    
+   <% postdetails.forEach(function(post) { %>
+            <div class="col-lg-4"><img style="width:75%;height:75%;" src="data:image/<%=post.img.contentType%>;base64,
+            <%=post.img.data.toString('base64')%>">   </div>
+            <% } ) %> 
+            </div></div>
+    </div> 
+ </div>
+</div>
+<%- include('partials/footer2'); -%>

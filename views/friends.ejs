@@ -1,0 +1,26 @@
+<%- include('partials/header2'); -%>
+<div class="col-lg-4"> 
+    <% friendsdetails.forEach(function(friend) { %>
+            <div class="row"style="background-color:#80E1D3;width:400px;height:70px;margin-top:10px;"> 
+        <div class="col-lg-6 col-sm-4 col-md-6"> <div class="row-lg-4">
+            <img style="width:50px;height:50px;margin-top: 10px;display: none;" src="images/mainprofileimage.jpg">
+        </div>
+        <form action="/deletefriend" method="post">
+            
+            <input type="text" value="<%=friend.friendname%>" name="deletefriend" style="display: none;">
+        <div class="row-lg-4"><h2 class="h2" style="font-family:'Shadows Into Light',sans-serif ;font-size:30px;color:#195C52;font-weight: bold;"><%=friend.friendname%></h2>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+        <div class="col-lg-6 col-sm-4 col-md-6"> <div class="row-lg-4">
+          <button type="submit"  style="color:#195C52;font-weight: bold;background-color: black;margin-top: 10px;">UNFRIEND</button>
+            </div></form>
+            </div>    
+            </div>
+    <% } ) %>
+ 
+    </div>
+
+
+</div>
+</div>
+</div>
+<%- include('partials/footer2'); -%>

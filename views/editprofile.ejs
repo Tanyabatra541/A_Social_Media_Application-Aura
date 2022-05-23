@@ -1,0 +1,29 @@
+<%- include('partials/header2'); -%> 
+        
+          <div class="col-lg-4">
+            <div class="row" style="background-color:#2DA896;width:500px;height:500px;content:contain;"> 
+                    <h2 class="h2" style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;">EDIT PROFILE</h2>
+                    <ul style="list-style-type:none;">
+                
+                      <table style="text-align:left;"> 
+                        <form action="/editprofile1" method="post"><tr> <td> New Username &nbsp;</td> <td> <input class="signup" id="username" type="text" name="nusername"> </td><td><button type="submit"  style="color:#195C52;font-weight: bold;background-color: black;">EDIT</button><br></td></tr></form>
+                        <tr><td><br></td></tr>
+                        <form action="/editprofile3" method="post"><tr> <td> New Mobile number &nbsp;</td> <td> <input class="signup" id="num" type="tel" name="num"> </td><td><button type="submit"  style="color:#195C52;font-weight: bold;background-color: black;">EDIT</button><br></td></tr></form>
+                        <tr><td><br></td></tr>
+                        <form action="/editprofile2" method="post"><tr> <td> New Email &nbsp;</td> <td> <input class="signup" id="num" type="mail" name="nmail"> </td><td><button type="submit"  style="color:#195C52;font-weight: bold;background-color: black;">EDIT</button><br></td></tr></form>
+                        <tr><td><br></td></tr>
+                        <tr> <td> Old Password &nbsp;</td> <td> <input class="signup" type="password" name="pwd"> </td> </tr>
+                        <tr> <td> New Password &nbsp;</td> <td> <input class="signup" id="psw" type="password" name="pwd"> </td></tr>
+                        <form action="/editprofilepsw" method="post"><tr> <td> Confirm New Password &nbsp;</td> <td> <input class="signup" id="psw" type="password" name="npwd"> </td><td><button type="submit"  style="color:#195C52;font-weight: bold;background-color: black;">EDIT</button><br></td></tr></form>
+                        <tr><td><br></td></tr>
+                        <tr> <td> New Profile &nbsp;</td> <td>  <div class="upload"><input type="file" id="myFile" name="filename">UPLOAD</div></td> </tr><tr><td><br></td></tr>
+                        <form action="/deleteaccount" method="post"><tr><td><button type="submit"  style="color:#195C52;font-weight: bold;background-color: black;">DELETE ACCOUNT</button><br></td></tr></form>
+                    </table>
+                
+                    
+                    </ul>
+            
+    </div></div>
+    <%- include('partials/footer2'); -%>
+    
+    

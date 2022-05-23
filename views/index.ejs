@@ -1,0 +1,100 @@
+<%- include('partials/header'); -%>
+        <div class="col-lg-6"><div style="float: right;text-align: center;"><form action="/index" method="post">
+             <div class="row">    
+                 <div class="col">   
+            <input id="name1" type="text" placeholder="Enter Username" name="username" required autocomplete="off"><br></div> 
+            <div class="col">   <button type="submit" class="btn btn-dark" style="color:#195C52;font-weight: bold;">LOGIN</button><br>
+        </div> </div>
+        <div class="row"><div class="col"> 
+            <input id="name1" type="password" placeholder="Enter Password" name="password" required><br></div>
+             <div class="col"> 
+              <input type="checkbox" checked="checked" name="remember"> Remember me<br><br></div></div></form>
+              <form action="/register" method="get">
+                <div class="row"><div class="col"> 
+                 <div class="col"> 
+                   <button type="submit" class="btn btn-dark" style="color:#195C52;font-weight: bold;">NEW USER</button></div></div>
+            
+            </div></form></form></div> </div></div>
+
+<!-- OVERVIEW WITH 2 DIVISIONS -->
+<div class="container">
+<div class="row" style="background-color:black;padding-top: 30px;">
+    <!-- <div class="col-lg-6 col-sm-12 left1"><img class="image" src="images/planbimage1.jpeg"></div>
+    <div class="col-lg-6 col-sm-12 right1" style="background-color: #555C5B;"><img class="image1" src="images/planbimage2.jpeg"></div> -->
+    <div id="background_video"><br><video loop autoplay muted src="images/aura.mp4"></video></div>  
+  </div></div>
+   <!-- Features -->
+
+   <section id="features">
+    <div class="row">
+       <div class="col-lg-4 col-md-12" ><i class="fas fa-check-circle"></i><h3>Easy to use.</h3></div>
+    
+        <div class="col-lg-4 col-md-12"><i class="fas fa-bullseye"></i><h3>Elite Clientele</h3></div>
+    
+        <div class="col-lg-4 col-md-12"><i class="fas fa-heart"></i><h3>Guaranteed to work.</h3></div></div>
+     </section>
+  <!-- slides explaining functions -->
+  <section id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+        <h2>EXCITING LIVE CHAT SYSTEM</h2>
+        <img class="testimonial-image"src="images/livechatsystem.jpeg" alt="CHAT"></div>
+        <div class="carousel-item ">
+        <h2 class="testimonial-text">SHARE IDEAS AND THOUGHTS</h2>
+        <img class="testimonial-image" src="images/ideasandthoughts.jpeg" alt="IDEAS"></div>
+        <div class="carousel-item ">
+          <h2 class="testimonial-text">SEARCH AND EXPLORE</h2>
+          <img class="testimonial-image" src="images/explore.jpeg" alt="SEARCH"></div></div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+      </section>
+      <%- include('partials/footer'); -%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>
+    Login Page
+</h1>
+<form action="/login" method="POST">
+    <label for="username">UserName</label>
+    <input type="text" placeholder="username" id="xyz" name="username">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    <button>Login</button>
+</form>
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/register">SignUp</a></li>
+</ul> -->

@@ -1,0 +1,91 @@
+<%- include('partials/header2'); -%>  
+            <div class="col-lg-4">
+       <div class="row" style="background-color:#2DA896;width:500px;height:140px;content:contain;">   
+        <div class="col-lg-4"> <div class="row-lg-4">
+         <img style="width:100px;height:100px;margin-top:10px;" src="data:image/<%=ImageContent%>;base64,
+                 <%=ImageData%>">
+                </div>
+                <div class="row-lg-4"><h2 class="h2" style="font-family:'Shadows Into Light',sans-serif ;font-size:25px;color:black;font-weight:bold"><%=NewUser%></h2>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            </div>
+                <div class="col-lg-4">
+                <div class="row-lg-4" style="font-family:'Shadows Into Light',sans-serif ;font-size:25px;color:black;font-weight:bold;margin-top: 50px;">Following</div>
+        <div class="row-lg-4" ><%=following%></div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row-lg-4" style="font-family:'Shadows Into Light',sans-serif ;font-size:25px;color:black;font-weight:bold;margin-top: 50px;">Followers</div>
+        <div class="row-lg-4"><%=followers%></div>
+            </div>
+       
+       </div> <br>
+       <div id="posthere"class="row" style="background-color:#2DA896;width:800px;height:350px;content:contain;margin-top:20px;">
+       <form style="margin-top:30px" action="/tweets" method="post" name="registerForm" enctype="multipart/form-data">
+        <input type="text" name="tweetname" style="background-color:#195C52;border: 2px solid;border-color: black;color:#2DA896">
+        <br><br>
+        <textarea style="background-color:#195C52;width:600px;max-height:200px;height:100px;border: 2px solid;border-color: black;color:#2DA896" name="tweet">Share your thoughts...</textarea><br><br>
+          
+          <!-- <input type="file" name="image" id="image" class="signup"> <br><br> -->
+          <button type="submit"  style="color:#2DA896;font-weight: bold;background-color: black;">TWEET</button>
+          </form>
+          <form action="/myposts" method="post" name="registerForm" enctype="multipart/form-data">
+            <div class="upload"><input type="file" id="myFile" name="image">UPLOAD PHOTO</div><br><br>
+            <button type="submit"  style="color:#2DA896;font-weight: bold;background-color: black;">POST</button>
+            </form>
+       
+          
+
+    </div>
+    </div>
+       <div class="col-lg-4" style="background-color:black;margin-left:130px;width:180px;height:140px;">
+           <br>
+           <a href="/editprofile" style="text-decoration: none;"><p style="color:#2DA896">EDIT PROFILE</p></a>
+           <a href="#posthere" style="text-decoration: none;"><p style="color:#2DA896">POST</p></a>
+           <a href="#myfeed" style="text-decoration: none;"><p style="color:#2DA896;">TWEETS</p></a>
+           <a href="/posts" style="text-decoration: none;"><p style="color:#2DA896">PHOTOS</p></a>
+       </div>
+       </div>
+       <!-- MY FEED -->
+       <div id="myfeed"class="row" style="background-color:#2DA896;width:100%;height:100%;content:contain;padding-top:50px;margin-top: 100px;">
+        <div class="col-lg-4"><h2 class="h2" style="font-family:'Shadows Into Light',sans-serif ;">My Feed</h2></div>
+       <div class="col-lg-4"><button class="btn btn-dark" style="color:#2DA896;font-weight: bold;" onclick="Tweet()" >TWEETS</button></div>
+       <div class="col-lg-4"><button class="btn btn-dark" style="color:#2DA896;font-weight: bold;" onclick="Comments()" >COMMENTS</button></div>
+<div class="col" id="tweets"style="display:none;margin-top:5px;">
+    <div class="row">
+        <% tweetsdetails.forEach(function(tweet) { %>
+
+    <div class="col-lg-4" style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size:30px;font-weight: bold;">Subject: <%=tweet.tweetname%><br><br></div>
+<div class="col-lg-4" style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size: 30px;font-weight: bold;">Tweet: <%=tweet.tweet%><br><br></div>
+<% } ) %>
+</div>
+</div>
+<div class="col" id="comments"style="display:none;margin-top:5px;">
+    <div class="row">
+        <% commentdetails.forEach(function(comment) { %>
+
+    <div class="col-lg-3" style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size:30px;font-weight: bold;">Tweet: <%=comment.tweetname%><br><br></div>
+<div class="col-lg-3" style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size: 30px;font-weight: bold;">Comment: <%=comment.comment%><br><br></div>
+<div class="col-lg-3" style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;font-size: 30px;font-weight: bold;">By: <%=comment.by%><br><br></div>
+<% } ) %>
+</div>
+</div>
+</div>
+<%- include('partials/footer2'); -%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

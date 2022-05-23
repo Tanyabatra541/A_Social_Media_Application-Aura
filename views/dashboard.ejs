@@ -1,0 +1,20 @@
+<%- include('partials/header2'); -%>  
+          <div class="col-lg-4">
+            <% friendsdetails.forEach(function(friend) { %>
+            <div class="row container"style="background-color:#80E1D3 ;width:100%;height:400px;content:contain">   
+            <div class="col" style="color: #195c52;font-family:'Shadows Into Light',sans-serif ;font-size:30px;font-weight: bold; padding-top:5%;"><%=friend.friendname%></div><br>
+             <div class="row" style="color: black;font-family:'Shadows Into Light',sans-serif ;font-size:30px;font-weight: bold; padding-left: 8%; padding-top: 1%;"><%=friend.tweetname[friend.tweetname.length-1]%></div><br>
+             <div class="row" style="color: black;font-family:'Shadows Into Light',sans-serif ;font-size:30px;font-weight: bold; padding-left: 8%; padding-top: 1%;"><%=friend.tweet[friend.tweetname.length-1]%></div><br>
+            <form method="post" action="/comments"> 
+                <input type="text" style="display:none" name="userid" value="<%=friend.friendname%>">
+                <input type="text" style="display:none" name="tweetname" value="<%=friend.tweet[friend.tweetname.length-1]%>">
+            <input type="text" style="height:35px;padding-left: 8%"class="comment" name="comment" placeholder="write a comment">
+             <button class="btn btn-dark" type="submit" style="height: 35px;">POST</button>
+            </form>
+        </div><br>
+             <% } ) %>
+         </div>
+         </div>
+        </div>
+          <%- include('partials/footer2'); -%>
+        

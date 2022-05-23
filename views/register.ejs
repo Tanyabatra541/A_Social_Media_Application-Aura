@@ -1,0 +1,83 @@
+<%- include('partials/header'); -%>
+            <div class="col-lg-6"><div style="float: right;text-align: center;"><form action="/index" method="get">
+                <div class="row"><div class="col"> 
+                <div class="col">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                    </div></div></div>
+                    <div class="row"><div class="col"> 
+                        <div class="col">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                            </div></div></div> 
+            <div class="row"><div class="col"> 
+                
+                <div class="col">
+             <button type="submit" class="btn btn-dark" style="color:#195C52;font-weight: bold;">HOME</button>&nbsp;&nbsp;&nbsp;&nbsp;</div></div>
+           
+           </div></form>
+        </div></div></div>
+<div class="container">
+    <div class="row" style="background-color:black;padding-top: 30px;">
+        <div class="col-lg-6 col-sm-12">
+            <video autoplay loop muted style="width:600px; height:800px;padding-top:0px;">
+            <source src="images/Instagram Post 1080x1080 px.mp4" >
+            </video>
+        </div>
+        <div class="col" style="text-align: center;margin-left: 80px;">
+            <div class="col"  id="signupform" style="text-align: center;">
+            <form action="/register" method="post" name="registerForm" enctype="multipart/form-data">
+                <h2 class="h2" style="font-family:'Shadows Into Light',sans-serif ;margin:20px 20px;">Create account</h2>
+                <ul style="list-style-type:none;">
+            
+                  <table style="text-align:left;"> 
+                    <tr> <td> Full name &nbsp;</td> <td> <input class="signup" type="text" name="fullname" required> </td></tr><tr><td><br></td></tr>
+                    <tr> <td> User name &nbsp;</td> <td> <input class="signup" id="username" type="text" name="username" required onblur="usernameValidate()"> </td> </tr><tr><td><br></td></tr>
+                    <tr> <td> Date of birth &nbsp;</td> <td> <input class="signup" type="date" name="dob" required> </td> </tr><tr><td><br></td></tr>
+                    <tr> <td> Mobile number &nbsp;</td> <td> <input class="signup" id="num" type="number" name="phone" required onblur="phonenumber()"> </td> </tr><tr><td><br></td></tr>
+                    <tr> <td> Email &nbsp;</td> <td> <input class="signup" type="email" name="mail" required> </td> </tr><tr><td><br></td></tr>
+                    <tr> <td> Password &nbsp;</td> <td> <input class="signup" id="psw" type="password" name="password" required onblur="CheckPassword()"> </td> </tr><tr><td><br></td></tr>
+                   <tr> <td> Profile Picture &nbsp;</td> <td><input type="file" name="image" id="image" class="signup"></td> </tr><tr><td><br></td></tr>
+                    
+            </table>
+            
+            <button class="signup" input type="submit" style="margin-bottom: 10px;">&nbsp;SIGN UP&nbsp;</button><br>
+                </ul>
+            </form></div></div>
+        </div></div>
+        <%- include('partials/footer'); -%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>
+    SignUp Page
+</h1>
+<form action="/register" method="POST">
+    <label for="username">UserName</label>
+    <input type="text" id="username" name="username">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    <label for="phone">Mobile No:-</label>
+    <input type="text" name="phone" id="phone">
+    <label for="telephone">TelePhone No:-</label>
+    <input type="text" name="telephone" id="telephone">
+    <button>Submit</button>
+</form>
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/login">login</a></li>
+</ul> -->
